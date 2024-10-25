@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body style="margin-top: 30px;">
+	<div class="container">
+		<form>
+			<div class="row" >
+				<div class="col-sm-4">
+					<div class="form-group">
+					<label for="text">Product Name:</label>
+					<input type="text" class="form-control" placeholder="Enter Product Name" name="produtname">
+				</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+					<label for="text">Model:</label>
+					<input type="text" class="form-control" placeholder="Enter Model" name="model">
+				</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="form-group">
+					<label for="text">Sale Price:</label>
+					<input type="text" class="form-control" placeholder="Enter Sale Price" name="saleprice">
+				</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+					<label for="text">Description:</label>
+					<input type="text" class="form-control" placeholder="Enter Description" name="description">
+				</div>
+				</div>
+			</div>
+			<div class="row" style="margin-left: 140px; margin-top: 30px;">
+			<div class="col-sm-2 ">
+				<input type="button" name="Save" value="Save" class="btn btn-success" style="width: 100px">
+			</div>
+			<div class="col-sm-2 ">
+				<input type="button" name="Delete" value="Delete" class="btn btn-info" style="width: 100px">
+			</div>
+			<div class="col-sm-2">
+				<input type="reset" name="Clear" value="Clear" class="btn btn-danger" style="width: 100px">
+			</div>
+		</div>
+		</form>
+	</div>
+	<div class="container">
+	<form class="form-inline" role="form">
+		<div class="row" style="margin-top: 30px;">
+			<div class="col-sm-2 col-sm-offset-5">
+				<input type="text" class="form-control" name="Search" placeholder="Search">
+			</div>
+				<div class="col-sm-2">
+				<input type="button" class="btn" name="Search" value="Search">
+				</div>	
+		
+	</div>
+</form>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			<table class="table table-hover table-bordered" style="margin-top: 20px;">
+				<thead>
+					<tr>
+						<th>Product Name</th>
+						<th>Model</th>
+						<th>Sale Price</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Laptop</td>
+						<td>dell vostro</td>
+						<td>30000</td>
+						<td>core i3, 4gb Ram, 500gb Hard disk</td>
+					</tr>
+					<tr>
+						<td>Laptop</td>
+						<td>HP Elitebook</td>
+						<td>25000</td>
+						<td>core i3, 2gb Ram, 250gb Hard disk</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>

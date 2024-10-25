@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<style type="text/css">
+		body
+		{
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+<h3 style="text-align: center;">Sales Form</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+
+		</div>
+		</div>
+
+
+
+		<form>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">Customer Details</div>
+		<div class="row" style="padding: 5px;">
+			<div class="col-sm-2">
+				<div class="form-group">
+				<label for="date">Date:</label>
+				<input type="date" class="form-control" name="date">
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+				<label for="text">Bill No.:</label>
+				<input type="billno" class="form-control" placeholder="Enter Bill No." name="txtaddress">
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+				<label for="text">Customer Name:</label>
+				<input type="text" class="form-control" placeholder="Enter Customer name" name="custname">
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+				<label for="text">Contact</label>
+				<input type="contact" class="form-control" placeholder="Enter Contact" name="contact">
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="text">Address:</label>
+					<input type="address" class="form-control" placeholder="Enter Address" name="txtaddress">
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="email">E-mail:</label>
+					<input type="email" class="form-control" placeholder="Enter E-mail" name="email">
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="panel panel-primary">
+			<div class="panel-heading">Product Details</div>
+		<div class="row" style="padding: 5px;">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="product">Product:</label>
+					<select name="Product" class="form-control selectpicker tabindex="2">
+							<option>--Select Product--</option>
+							<option>Laptop</option>
+							<option>CPU</option>
+						</select>
+			</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="model">Model:</label>
+					<input type="model" class="form-control" placeholder="Enter Model" name="model">
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="qty">Quantity:</label>
+					<input type="qty" class="form-control" placeholder="Enter Quantity" name="qty">
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="rate">Rate:</label>
+					<input type="rate" class="form-control" placeholder="Enter Rate" name="rate">
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="description">Description:</label>
+					<input type="description" class="form-control" placeholder="Enter Description" name="description">
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="SubTotal">Sub Total:</label>
+					<input type="SubTotal" class="form-control" placeholder="Enter SubTotal" name="SubTotal">
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="row">
+			<div class="col-sm-2 col-md-offset-5" style="margin-top: 30px;">
+				<input type="button" name="ADD" value="ADD" class="btn btn-success" style="width: 100px">
+			</div>
+		</div>
+	</form>
+</div>
+<div class="container">
+<div class="row" style="padding: 5px;">
+	<div class="table-responsive">
+		<table class="table table-hover table-bordered" style="margin-top: 60px;">
+			<thead>
+				<tr class="success">
+					<th>Date</th>
+					<th>Bill No.</th>
+					<th>Customer Name</th>
+					<th>Contact</th>
+					<th>Address</th>
+					<th>E-mail</th>
+					<th>Product</th>
+					<th>Model</th>
+					<th>Quantity</th>
+					<th>Rate</th>
+					<th>Description</th>
+					<th>Sub Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>24-10-2024</td>
+					<td>349950</td>
+					<td>Vishal</td>
+					<td>7348776876</td>
+					<td>Bangalore</td>
+					<td>vishal123@gmail.com</td>
+					<td>Laptop</td>
+					<td>vosto</td>
+					<td>1</td>
+					<td>30000</td>
+					<td>core i3 4gb Ram 500gb Hard Drive</td>
+					<td>35000</td>
+				</tr>
+				<tr>
+					<td>23-10-2024</td>
+					<td>676586</td>
+					<td>Ajinkya</td>
+					<td>9076464479</td>
+					<td>Pune</td>
+					<td>ajinkya123@gmail.com</td>
+					<td>Laptop</td>
+					<td>Inspiron</td>
+					<td>1</td>
+					<td>45000</td>
+					<td>core i3 4gb Ram 500gb Hard Drive</td>
+					<td>47000</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</div>
+	</div>		
+</body>
+</html>

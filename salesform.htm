@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sales form</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-primary" style="margin-top: 30px;">
+			<div class="panel-heading"></div>
+			<div class="row" style="padding: 5px;">
+				<div class="col-sm-3">
+					<div class="form-group">
+					<label for="date">Date :-</label>
+					<input type="date" name="" class="form-control"placeholder=>
+				</div> 
+			</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+					<label for="Name">Bill No. :-</label>
+					<input type="text" name="billno" class="form-control" placeholder="Enter Bill N0.">
+				</div>
+			</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+					<label for="customer">Customer :-</label>
+					<select  name="customer" class="form-control selectpicker" tabindex="2">
+					<option>--Select Customer--</option>
+							<option></option>
+							<option></option>
+					</select>
+				</div>
+			</div>
+				<div class="col-sm-3">
+				<div class="form-group">
+					<label for="dispatch">Dispatch Through :-</label>
+					<select name="dispatch" class="form-control selectpicker" tabindex="2">
+							<option>--Select Product--</option>
+							<option></option>
+							<option></option>
+					</select>
+				</div>
+			</div>
+
+			</div>
+		</div>
+
+
+<!-- ------------------------------------------------------------------------------- -->
+
+
+
+<div class="panel panel-primary" style="margin-top: 30px;">
+	<div class="panel-heading"></div>
+	<div class="panel-body">
+		<div class="row" style="padding: 5px;">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="product">Product :-</label>
+					<select name="Product" class="form-control selectpicker tabindex="2">
+							<option>--Select Product--</option>
+							<option></option>
+							<option></option>
+						</select>
+				</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="form-group">
+						<label for="qty">Qty :-</label>
+						<input type="text" name="qty" class="form-control" placeholder="Enter Qty">
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="form-group">
+						<label for="rate">Rate :-</label>
+						<input type="text" name="rate" class="form-control" placeholder="Enter Rate">
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="form-group">
+						<label for="gst">GST% :-</label>
+						<input type="text" name="GST" class="form-control" placeholder="Enter GST">
+					</div>
+				</div>
+				<div class="col-sm-2">
+				<div class="form-group">
+					<label for="gst">GST :-</label>
+					<select name="GST" class="form-control selectpicker tabindex="2">
+							<option>--Select GST--</option>
+							<option></option>
+							<option></option>
+						</select>
+				</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="form-group">
+						<label for="discount">Discount% :-</label>
+						<input type="text" name="GST" class="form-control" placeholder="Enter Discount">
+					</div>
+				</div>
+		</div>
+		<div class="row" style="padding-bottom: 5px;">
+		<div class="col-sm-2 col-sm-offset-5 col-xs-offset-5">
+			<input type="button" name="btn" class="btn btn-success" value="ADD">
+		</div>
+	</div>
+
+	<div class="row">
+	<div class="table-responsive">
+		<table class="table table-hover table-bordered">
+			<thead>
+				<tr class="success">
+					<th>Product</th>
+					<th>Qty</th>
+					<th>Rate</th>
+					<th>GST%</th>
+					<th>GST Amt</th>
+					<th>Discount</th>
+					<th>Discount Amt</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>laptop</td>
+					<td>2</td>
+					<td>30000</td>
+					<td>18</td>
+					<td>2468</td>
+					<td>10</td>
+					<td>3000</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</div>
+	</div>
+</div>
+
+<div class="panel panel-primary">
+	<div class="panel-heading">	</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="tdiscount">Total Discount :-</label>
+					<input type="text" name="tdiscount" class="form-control" placeholder="Enter Total Discount">
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="tdiscount">Total GST :-</label>
+					<input type="text" name="tdiscount" class="form-control" placeholder="Enter Total GST">
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="tdiscount">Sub Total :-</label>
+					<input type="text" name="tdiscount" class="form-control" placeholder="Enter Sub Total">
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="tdiscount">Total :-</label>
+					<input type="text" name="tdiscount" class="form-control" placeholder="Enter Total">
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="tdiscount">Pay New :-</label>
+					<input type="text" name="tdiscount" class="form-control" placeholder="Enter Pay New">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="tdiscount">Current Pending :-</label>
+					<input type="text" name="tdiscount" class="form-control" placeholder="">
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="paymode">Pay Mode:-</label>
+					<input type="text" name="paymode" class="form-control" placeholder="">
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="chequedate">Cheque Date :-</label>
+					<input type="text" name="chequedate" class="form-control" placeholder="">
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for=banknamet">Bank Name :-</label>
+					<input type="text" name="bankname" class="form-control" placeholder="">
+				</div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label for="cheque_no">Cheque NO. :-</label>
+					<input type="text" name=" cheque_no" class="form-control" placeholder="">
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+</div>
+</body>
+</html>
